@@ -1,0 +1,67 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\newtheorem{definition}{Definition}
+
+\title{Complex Analysis}
+\author{Kami}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+
+\section{Complex Number}
+
+\begin{definition}
+    Complex number is an element of number system that extends the real number with specific
+    element denote $i$ called \textbf{Imaginary Unit} and satisfy the equation $i^2 = -1$
+    every complex number can we written in the form of $z = a + bi$ where $a,b \in \mathbb{R}$
+\end{definition}
+
+\subsection{Basic operation of complex number}
+Let $z_1 = x + yi$ and $z_2 = a + bi$
+
+\begin{itemize}
+    \item Addition: $z_1 + z_2 = (x + a) + (y + b)i$
+    \item Subtraction: $z_1 - z_2 = (x - a) + (y - b)i$
+    \item Multiplication: $z_1 \cdot z_2 = (x + yi)(a + bi) = (xa - yb) + (ya + xb)i$
+    \item Division: $\frac{z_1}{z_2} = \frac{xa + yb}{a^2 + b^2} + i\frac{ya - xb}{a^2+b^2}$
+\end{itemize}
+
+\subsection{Conjugate}
+\begin{definition}
+    The complex conjugate of $z=a+bi$ can be written as $\bar{z}$ or $z*$ which equal to $a-bi$
+\end{definition}
+
+Complex conjugation has be distributed over $+, -, \times, \div$
+
+\begin{equation}
+    (z^\star)^\star= z
+    \label{eq:Complex conjugation negation}
+\end{equation}
+
+\begin{equation}
+    (z_1 + z_2)^\star = z_1^\star + z_2^\star
+    \label{eq:Complex conjugation over addition}
+\end{equation}
+
+\begin{equation}
+    (z_1 - z_2)^\star = z_1^\star - z_2^\star
+    \label{eq:Complex conjugation over subtraction}
+\end{equation}
+
+\begin{equation}
+    (z_1 \cdot z_2)^\star = z_1^\star z_2^\star
+    \label{eq:Complex conjugation over multiplication}
+\end{equation}
+
+\begin{equation}
+    (\frac{z_1}{z_2})^\star = \frac{z_1^\star}{z_2^\star}
+    \label{eq:Complex conjugation over division}
+\end{equation}
+
+\end{document}
